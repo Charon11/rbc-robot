@@ -46,6 +46,22 @@ public class RobotRestController {
         return new ResponseEntity(this.robotServices.addRobot(robot), HttpStatus.OK);
     }
 
+    @RequestMapping(value = RobotMappingUrl.CONFIRM_ORDER, method = RequestMethod.POST)
+    public ResponseEntity confirmOrder(@RequestParam Integer robotId) throws NotSupportedStatusException, NotSupportedCategoryException {
+        return new ResponseEntity(this.robotServices.confirmOrder(robotId), HttpStatus.OK);
+    }
+
+
+    @RequestMapping(value = RobotMappingUrl.CANCEL_ORDER, method = RequestMethod.POST)
+    public ResponseEntity cancelOrder(@RequestParam Integer robotId) throws NotSupportedStatusException, NotSupportedCategoryException {
+        return new ResponseEntity(this.robotServices.cancelOrder(robotId), HttpStatus.OK);
+    }
+
+    @RequestMapping(value = RobotMappingUrl.PLACE_ORDER, method = RequestMethod.POST)
+    public ResponseEntity placeOrder(@RequestParam Integer robotId) throws NotSupportedStatusException, NotSupportedCategoryException {
+        return new ResponseEntity(this.robotServices.placeOrder(robotId), HttpStatus.OK);
+    }
+
     @RequestMapping(value = RobotMappingUrl.DELETE_ROBOT, method = RequestMethod.DELETE)
     public ResponseEntity deleteRobot(@PathVariable(value = "robotId") Integer id) {
         this.robotServices.deleteRobot(id);
@@ -62,6 +78,4 @@ public class RobotRestController {
     public ResponseEntity getAllStatus() {
         return new ResponseEntity(this.robotServices.getAllStatus(), HttpStatus.OK);
     }
-
-
 }

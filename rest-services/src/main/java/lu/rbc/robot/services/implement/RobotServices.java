@@ -14,7 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -53,8 +55,14 @@ public class RobotServices implements IRobotServices {
 
     @Override
     public List<Robot> findRobotByName(String name) {
-        if(name != null && !Strings.isNullOrEmpty(name))
-            return this.robotCrudRepository.findByNameContainingIgnoreCase(name);
+        if(name != null && !Strings.isNullOrEmpty(name)){
+            Set<Robot> result = new HashSet();
+            Arrays.asList(name.split("\\s+")).forEach(n -> {
+                result.addAll(this.robotCrudRepository.findByNameContainingIgnoreCase(n));
+            });
+            return result.stream().collect(Collectors.toList());
+        }
+
         else
             return Arrays.asList();
     }
@@ -70,8 +78,8 @@ public class RobotServices implements IRobotServices {
     }
 
     @Override
-    public void deleteRobot(Integer id) {
-        this.robotCrudRepository.delete(id);
+    public void deleteRobot(Integer robotId) {
+        this.robotCrudRepository.delete(robotId);
     }
 
     @Override
@@ -83,6 +91,31 @@ public class RobotServices implements IRobotServices {
     public void deleteAllByStatus(String status) throws NotSupportedStatusException {
         if (this.statusIsValid(status))
             this.robotCrudRepository.deleteAllByStatus(status);
+    }
+
+    @Override
+    public Robot placeOrder(Integer robotId) {
+        return this.updateRobotStatus(robotId, StatusEnum.PENDING);
+    }
+
+    @Override
+    public Robot confirmOrder(Integer robotId) {
+        return this.updateRobotStatus(robotId, StatusEnum.SOLD);
+    }
+
+    @Override
+    public Robot cancelOrder(Integer robotId) {
+        return this.updateRobotStatus(robotId, StatusEnum.AVAILABLE);
+    }
+
+    private Robot updateRobotStatus(Integer robotId, StatusEnum statusEnum) {
+        Robot updatedRobot = null;
+        Robot actualRobot = this.robotCrudRepository.findOne(robotId);
+        if(actualRobot != null) {
+            actualRobot.setStatus(statusEnum.getStatus());
+            updatedRobot =this.robotCrudRepository.save(actualRobot);
+        }
+        return updatedRobot;
     }
 
     private Boolean statusIsValid(String status) {

@@ -44,15 +44,17 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {SearchService} from './search/search.service';
 import { AddRobotComponent } from './add-robot/add-robot.component';
 import { RobotComponent } from './robot/robot.component';
-import {PropertiesService} from '../_shared/services/properties.service';
+import {PropertiesService} from './_shared/services/properties.service';
 import {AddRobotService} from "./add-robot/add-robot.service";
+import { RobotDisplayComponent } from './robot-display/robot-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
     AddRobotComponent,
-    RobotComponent
+    RobotComponent,
+    RobotDisplayComponent
   ],
   imports: [
     MdAutocompleteModule,

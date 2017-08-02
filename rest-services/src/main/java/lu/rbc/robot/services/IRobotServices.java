@@ -21,10 +21,16 @@ public interface IRobotServices {
 
     Robot addRobot(Robot robot) throws NotSupportedStatusException, NotSupportedCategoryException;
 
-    void deleteRobot(Integer id);
+    void deleteRobot(Integer robotId);
 
     List<String> getAllStatus();
 
     void deleteAllByStatus(String status) throws NotSupportedStatusException;
+
+    Robot placeOrder(Integer robotId);
+
+    Robot confirmOrder(Integer robotId);
+
+    Robot cancelOrder(Integer robotId);
 
 }

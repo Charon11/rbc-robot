@@ -1,50 +1,59 @@
 <div class="container" fxLayout fxLayout.xs="column" fxLayoutWrap="wrap"
-       fxLayoutGap="20px"
-       fxLayoutAlign="center"
-       fxLayoutGap.xs="10px">
+     fxLayoutGap="20px"
+     fxLayoutAlign="center"
+     fxLayoutGap.xs="10px">
 
-    <div fxFlex="45%" fxLayoutAlign="center">
-      <md-input-container style="width: 100%">
-        <input mdInput [(ngModel)]="searchName" (ngModelChange)="onSearchNameChange($event)"
-               placeholder="Recherche par nom">
-      </md-input-container>
-
-    </div>
-
-    <div fxFlex="25%" fxLayoutAlign="center" class="align-input">
-      <md-select placeholder="Recherche par categorie" (change)="onCategoryChange($event)">
-        <md-option value="{{null}}"></md-option>
-        <md-option *ngFor="let cat of categories" [value]="cat">
-          {{cat.name}}
-        </md-option>
-      </md-select>
-    </div>
-
-    <div fxFlex="25%" fxLayoutAlign="center" class="align-input">
-      <md-select placeholder="Recherche status" (change)="onStatusChange($event)">
-        <md-option value="{{null}}"></md-option>
-        <md-option *ngFor="let s of statusList" [value]="s">
-          {{s}}
-        </md-option>
-      </md-select>
-    </div>
+  <div fxFlex="45%" fxLayoutAlign="center">
+    <md-input-container style="width: 80%">
+      <input mdInput [(ngModel)]="searchName" (ngModelChange)="onSearchNameChange($event)"
+             placeholder="Recherche par nom">
+    </md-input-container>
 
   </div>
 
-  <div class="container" style="margin-bottom: 75px" fxLayout fxLayout.xs="column" fxLayoutWrap="wrap"
-       fxLayoutAlign="center">
+  <div fxFlex="25%" fxLayoutAlign="center" class="align-input">
+    <md-select style="width: 80%" placeholder="Recherche par categorie" (change)="onCategoryChange($event)">
+      <md-option value="{{null}}"></md-option>
+      <md-option *ngFor="let cat of categories" [value]="cat">
+        {{cat.name}}
+      </md-option>
+    </md-select>
+  </div>
 
-    <div fxFlex="30%" class="full-tile" *ngFor="let robot of searchResults">
-      <md-card class="card-hover">
-        <app-robot [robot]="robot"></app-robot>
-        <div class="floaty">
-          <div class="floaty-btn"(click)="delete(robot.id)">
-            <md-icon>delete</md-icon>
-          </div>
+  <div fxFlex="25%" fxLayoutAlign="center" class="align-input">
+    <md-select style="width: 80%" placeholder="Recherche status" (change)="onStatusChange($event)">
+      <md-option value="{{null}}"></md-option>
+      <md-option *ngFor="let s of statusList" [value]="s">
+        {{s}}
+      </md-option>
+    </md-select>
+  </div>
+
+</div>
+
+<div class="container" style="margin-bottom: 75px" fxLayout fxLayout.xs="column" fxLayoutWrap="wrap"
+     fxLayoutAlign="center">
+
+  <div fxFlex="30%" class="full-tile" *ngFor="let robot of searchResults">
+    <md-card class="card-hover">
+      <app-robot-display [robot]="robot"></app-robot-display>
+      <div class="floaty">
+        <div class="floaty-btn" *ngIf="robot.status === 'available'" (click)="placeOrder(robot.id)" fxFlex="40%">
+          <md-icon title="Ajouter au panier">add_shopping_cart</md-icon>
         </div>
-      </md-card>
-    </div>
+        <div class="floaty-btn" *ngIf="robot.status ==='pending'" (click)="cancelOrder(robot.id)" fxFlex="40%">
+          <md-icon title="Annuler">cancel</md-icon>
+        </div>
+        <div class="floaty-btn" *ngIf="robot.status ==='pending'" (click)="confirmOrder(robot.id)" fxFlex="40%">
+          <md-icon title="Confirmer">check_circle</md-icon>
+        </div>
+        <div class="floaty-btn" *ngIf="robot.status ==='sold'" (click)="delete(robot.id)" fxFlex="40%">
+          <md-icon title="Supprimer">delete</md-icon>
+        </div>
+      </div>
+    </md-card>
   </div>
+</div>
 
 
 

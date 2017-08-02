@@ -11,12 +11,16 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  display: none;
+  display: none !important;
 }
 
 
 .card-hover:hover .floaty {
-  display: block;
+  display: flex !important;
+}
+
+.floaty-btn {
   cursor: hand;
   cursor: pointer;
+  margin: 0px 5px;
 }

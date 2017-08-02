@@ -2,47 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba3279a-4aef-4d54-9b10-4f7ec8987987" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/assets/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/angular-cli.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/client.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/e2e/app.e2e-spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/e2e/app.po.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/e2e/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/protractor.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/app.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/app.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/environments/environment.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/polyfills.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/test.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/tslint.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/_shared/domain/robot.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/_shared/services/properties.service.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/_shared/services/properties.service.ts" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/pom.xml" afterPath="$PROJECT_DIR$/rest-services/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/robot/robot.component.ts" afterPath="$PROJECT_DIR$/client/src/app/robot/robot.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/search/search.component.css" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/search/search.component.html" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/search/search.component.ts" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/search/search.service.ts" afterPath="$PROJECT_DIR$/client/src/app/search/search.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/RobotMappingUrl.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/RobotMappingUrl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/CategoryRestController.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/CategoryRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/ExceptionHandlingController.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/ExceptionHandlingController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/RobotRestController.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/RobotRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/domain/Robot.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/domain/Robot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/domain/StatusEnum.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/domain/StatusEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/repository/RobotCrudRepository.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/repository/RobotCrudRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/IRobotServices.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/IRobotServices.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/implement/RobotServices.java" afterPath="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/implement/RobotServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-services/src/main/resources/data.sql" afterPath="$PROJECT_DIR$/rest-services/src/main/resources/data.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/rest-services/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,19 +61,45 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RobotServices.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RobotServices.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/implement/RobotServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-124">
-              <caret line="56" column="74" lean-forward="false" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
+            <state relative-caret-position="281">
+              <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3404#3405#0" expanded="true" />
+                <element signature="e#3478#3479#0" expanded="true" />
+                <element signature="e#3542#3543#0" expanded="true" />
+                <element signature="e#3613#3614#0" expanded="true" />
+                <element signature="e#3676#3677#0" expanded="true" />
+                <element signature="e#3752#3753#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RobotRestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/RobotRestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotMappingUrl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/RobotMappingUrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-services/src/main/resources/data.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -128,6 +127,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IRobotServices.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/IRobotServices.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -175,8 +184,6 @@
         <option value="$PROJECT_DIR$/client/angular-cli.json" />
         <option value="$PROJECT_DIR$/rest-services/pom.xml" />
         <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/IRobotServices.java" />
-        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/RobotMappingUrl.java" />
         <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/ExceptionHandlingController.java" />
         <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/domain/StatusEnum.java" />
         <option value="$PROJECT_DIR$/client/src/styles.css" />
@@ -186,14 +193,16 @@
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.css" />
         <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.html" />
-        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/RobotRestController.java" />
         <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/CategoryRestController.java" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.service.ts" />
         <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/repository/RobotCrudRepository.java" />
-        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/implement/RobotServices.java" />
         <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/domain/RobotCategory.java" />
         <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/domain/Robot.java" />
         <option value="$PROJECT_DIR$/rest-services/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/RobotMappingUrl.java" />
+        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/RobotRestController.java" />
+        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/IRobotServices.java" />
+        <option value="$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/implement/RobotServices.java" />
       </list>
     </option>
   </component>
@@ -250,7 +259,7 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollFromSource ProjectPane="false" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
@@ -422,6 +431,40 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RBC-Robots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RobotRestController" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -988,12 +1031,12 @@
       <updated>1501525490228</updated>
       <workItem from="1501525494359" duration="4841000" />
       <workItem from="1501530741508" duration="9754000" />
-      <workItem from="1501578377774" duration="11050000" />
+      <workItem from="1501578377774" duration="15272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25645000" />
+    <option name="totallyTimeSpent" value="29867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -1079,11 +1122,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="Sets.newHashSet(StatusEnum.values())" />
+        <watch expression="name.split(&quot;\\s+&quot;))" />
+        <watch expression="name.split(&quot;\\s+&quot;)" />
       </configuration>
     </watches-manager>
   </component>
@@ -1118,6 +1163,12 @@
           <caret line="57" column="37" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3404#3405#0" expanded="true" />
+            <element signature="e#3478#3479#0" expanded="true" />
+            <element signature="e#3542#3543#0" expanded="true" />
+            <element signature="e#3613#3614#0" expanded="true" />
+            <element signature="e#3676#3677#0" expanded="true" />
+            <element signature="e#3752#3753#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1364,16 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/IRobotServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/ExceptionHandlingController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1445,7 +1486,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="10" />
           <folding>
-            <marker date="1501676957000" expanded="true" signature="11:118" ph="{...}" />
+            <marker date="1501691687000" expanded="true" signature="11:118" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1465,24 +1506,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/RobotRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-409">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/RobotMappingUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1509,16 +1532,6 @@
         <state relative-caret-position="195">
           <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/implement/RobotServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="56" column="74" lean-forward="false" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1555,6 +1568,46 @@
         <state relative-caret-position="135">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/config/RobotMappingUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/controller/RobotRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/IRobotServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-services/src/main/java/lu/rbc/robot/services/implement/RobotServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3404#3405#0" expanded="true" />
+            <element signature="e#3478#3479#0" expanded="true" />
+            <element signature="e#3542#3543#0" expanded="true" />
+            <element signature="e#3613#3614#0" expanded="true" />
+            <element signature="e#3676#3677#0" expanded="true" />
+            <element signature="e#3752#3753#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

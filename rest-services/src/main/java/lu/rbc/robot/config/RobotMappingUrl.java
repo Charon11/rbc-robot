@@ -15,5 +15,8 @@ public class RobotMappingUrl {
     public static final String DELETE_CATEGORY = "/category/{categoryId}";
     public static final String GET_CATEGORIES = "/categories";
     public static final String GET_ALL_STATUS = "/status";
+    public static final String PLACE_ORDER = "/robot/order/place";
+    public static final String CONFIRM_ORDER = "/robot/order/confirm";
+    public static final String CANCEL_ORDER = "/robot/order/cancel";
 
 }

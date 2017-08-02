@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {PropertiesService} from '../../_shared/services/properties.service';
+import {PropertiesService} from '../_shared/services/properties.service';
 
 @Component({
   selector: 'app-robot',
@@ -18,13 +18,5 @@ export class RobotComponent implements OnInit {
     this.propertiesService.getCategories().subscribe(categories => this.categories = categories);
     this.propertiesService.getStatus().subscribe(status => this.statusList = status);
 
-  }
-
-  onCategoryChange(event) {
-    console.log(event);
-  }
-
-  onStatusChange(event) {
-    console.log(event);
   }
 }
