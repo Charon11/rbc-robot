@@ -26,7 +26,7 @@ public class ExceptionHandlingController {
     @ExceptionHandler(Exception.class)
     public ResponseEntity defaultHandler(Exception e){
         log.error(e);
-        return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
 }

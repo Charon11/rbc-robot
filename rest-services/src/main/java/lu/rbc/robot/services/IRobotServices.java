@@ -25,4 +25,6 @@ public interface IRobotServices {
 
     List<String> getAllStatus();
 
+    void deleteAllByStatus(String status) throws NotSupportedStatusException;
+
 }

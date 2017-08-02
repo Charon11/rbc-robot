@@ -1,5 +1,6 @@
 package lu.rbc.robot.services.implement;
 
+import com.google.common.base.Strings;
 import com.google.common.collect.Sets;
 import lu.rbc.robot.domain.Robot;
 import lu.rbc.robot.domain.RobotCategory;
@@ -52,7 +53,10 @@ public class RobotServices implements IRobotServices {
 
     @Override
     public List<Robot> findRobotByName(String name) {
-        return this.robotCrudRepository.findByNameContaining(name);
+        if(name != null && !Strings.isNullOrEmpty(name))
+            return this.robotCrudRepository.findByNameContainingIgnoreCase(name);
+        else
+            return Arrays.asList();
     }
 
     @Override
@@ -73,6 +77,12 @@ public class RobotServices implements IRobotServices {
     @Override
     public List<String> getAllStatus() {
         return Arrays.asList(StatusEnum.values()).stream().map(statusEnum -> statusEnum.getStatus()).collect(Collectors.toList());
+    }
+
+    @Override
+    public void deleteAllByStatus(String status) throws NotSupportedStatusException {
+        if (this.statusIsValid(status))
+            this.robotCrudRepository.deleteAllByStatus(status);
     }
 
     private Boolean statusIsValid(String status) {

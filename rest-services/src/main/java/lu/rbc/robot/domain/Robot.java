@@ -28,6 +28,7 @@ public class Robot implements Serializable {
     private double price;
 
     @JoinColumn
+    @ManyToOne
     private RobotCategory category;
 
 

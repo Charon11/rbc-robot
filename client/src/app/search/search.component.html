@@ -1,0 +1,53 @@
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutWrap="wrap"
+       fxLayoutGap="20px"
+       fxLayoutAlign="center"
+       fxLayoutGap.xs="10px">
+
+    <div fxFlex="45%" fxLayoutAlign="center">
+      <md-input-container style="width: 100%">
+        <input mdInput [(ngModel)]="searchName" (ngModelChange)="onSearchNameChange($event)"
+               placeholder="Recherche par nom">
+      </md-input-container>
+
+    </div>
+
+    <div fxFlex="25%" fxLayoutAlign="center" class="align-input">
+      <md-select placeholder="Recherche par categorie" (change)="onCategoryChange($event)">
+        <md-option value="{{null}}"></md-option>
+        <md-option *ngFor="let cat of categories" [value]="cat">
+          {{cat.name}}
+        </md-option>
+      </md-select>
+    </div>
+
+    <div fxFlex="25%" fxLayoutAlign="center" class="align-input">
+      <md-select placeholder="Recherche status" (change)="onStatusChange($event)">
+        <md-option value="{{null}}"></md-option>
+        <md-option *ngFor="let s of statusList" [value]="s">
+          {{s}}
+        </md-option>
+      </md-select>
+    </div>
+
+  </div>
+
+  <div class="container" style="margin-bottom: 75px" fxLayout fxLayout.xs="column" fxLayoutWrap="wrap"
+       fxLayoutAlign="center">
+
+    <div fxFlex="30%" class="full-tile" *ngFor="let robot of searchResults">
+      <md-card class="card-hover">
+        <app-robot [robot]="robot"></app-robot>
+        <div class="floaty">
+          <div class="floaty-btn"(click)="delete(robot.id)">
+            <md-icon>delete</md-icon>
+          </div>
+        </div>
+      </md-card>
+    </div>
+  </div>
+
+
+
+
+
+

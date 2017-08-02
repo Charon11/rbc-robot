@@ -1,0 +1,18 @@
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutWrap="wrap"
+     fxLayoutGap="20px"
+     fxLayoutAlign="center"
+     fxLayoutGap.xs="10px">
+
+  <div fxFlex="75%" fxLayoutAlign="center">
+    <app-robot [robot]="robot" style="margin-bottom: 20px">
+    </app-robot>
+  </div>
+
+  <div fxFlex="30%" fxLayoutAlign="center">
+    <button md-raised-button (click)="close()">Cancel</button>
+  </div>
+  <div fxFlex="30%" fxLayoutAlign="center">
+    <button md-raised-button (click)="addRobot()">Ajouter</button>
+  </div>
+</div>
+

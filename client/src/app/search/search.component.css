@@ -1,0 +1,22 @@
+.full-tile {
+  padding: 10px 0px;
+  margin: 0px 10px 0px 10px;
+}
+
+.align-input {
+  border-top: 1em solid transparent
+}
+
+.floaty {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: none;
+}
+
+
+.card-hover:hover .floaty {
+  display: block;
+  cursor: hand;
+  cursor: pointer;
+}

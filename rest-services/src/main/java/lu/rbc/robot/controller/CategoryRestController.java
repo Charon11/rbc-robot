@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created by renaudchardin on 01/08/2017.
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/api")
 public class CategoryRestController {

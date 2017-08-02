@@ -1,0 +1,28 @@
+<md-list>
+  <md-list-item class="robot-property">
+    <md-input-container>
+      <input mdInput [(ngModel)]="robot.name" placeholder="Nom">
+    </md-input-container>
+  </md-list-item>
+  <md-list-item class="robot-property">
+    <md-select placeholder="Status" [(ngModel)]="robot.status" (change)="onStatusChange($event)">
+      <md-option value="{{null}}"></md-option>
+      <md-option *ngFor="let s of statusList" [value]="s">
+        {{s}}
+      </md-option>
+    </md-select>
+  </md-list-item>
+  <md-list-item>
+    <md-input-container class="robot-property">
+      <input mdInput [(ngModel)]="robot.price" placeholder="Prix">
+    </md-input-container>
+  </md-list-item>
+  <md-list-item class="robot-property">
+    <md-select placeholder="Categorie" [(ngModel)]="robot.category" (change)="onCategoryChange($event)">
+      <md-option value="{{null}}"></md-option>
+      <md-option *ngFor="let cat of categories" [value]="cat">
+        {{cat.name}}
+      </md-option>
+    </md-select>
+  </md-list-item>
+</md-list>

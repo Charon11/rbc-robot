@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created by renaudchardin on 31/07/2017.
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/api")
 public class RobotRestController {
@@ -48,6 +49,12 @@ public class RobotRestController {
     @RequestMapping(value = RobotMappingUrl.DELETE_ROBOT, method = RequestMethod.DELETE)
     public ResponseEntity deleteRobot(@PathVariable(value = "robotId") Integer id) {
         this.robotServices.deleteRobot(id);
+        return new ResponseEntity(HttpStatus.OK);
+    }
+
+    @RequestMapping(value = RobotMappingUrl.DELETE_ALL_ROBOT_BY_STATUS, method = RequestMethod.DELETE)
+    public ResponseEntity deleteAllRobotByStatus(@PathVariable(value = "status") String status) throws NotSupportedStatusException {
+        this.robotServices.deleteAllByStatus(status);
         return new ResponseEntity(HttpStatus.OK);
     }
 
